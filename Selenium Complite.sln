@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium Complite", "Selenium Complite\Selenium Complite.csproj", "{A8B0B75C-2632-4152-B241-4D7C8A13F18E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API Testing", "API Testing\API Testing.csproj", "{F8763A2F-12AE-4B7E-A169-1FAE0F0C7E38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8B0B75C-2632-4152-B241-4D7C8A13F18E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B0B75C-2632-4152-B241-4D7C8A13F18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B0B75C-2632-4152-B241-4D7C8A13F18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B0B75C-2632-4152-B241-4D7C8A13F18E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8763A2F-12AE-4B7E-A169-1FAE0F0C7E38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8763A2F-12AE-4B7E-A169-1FAE0F0C7E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8763A2F-12AE-4B7E-A169-1FAE0F0C7E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8763A2F-12AE-4B7E-A169-1FAE0F0C7E38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70DD5F23-113C-4969-BA4C-B68E6E271E62}
+	EndGlobalSection
+EndGlobal
