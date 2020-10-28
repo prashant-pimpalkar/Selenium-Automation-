@@ -113,8 +113,8 @@ namespace Selenium_Complite
         public void LocateById()
         {
             IWebDriver driver = new FirefoxDriver(); //run the borwser
-            driver.Url = "http://ankpro.com/Account/Login"; //open the Url or set the Url
-            driver.FindElement(By.Id("Email")).SendKeys("a@d.com");
+            driver.Url = "http://www.uitestpractice.com/Students/Create"; //open the Url or set the Url
+            driver.FindElement(By.Id("FirstName")).SendKeys("prashant");
             Thread.Sleep(4000);// wait for 4000 mili sec to view the result  
             driver.Quit();  //close the borwser 
         }
@@ -123,8 +123,8 @@ namespace Selenium_Complite
         public void LocateByName()
         {
             IWebDriver driver = new FirefoxDriver(); //run the borwser
-            driver.Url = "http://ankpro.com/Account/Login"; //open the Url or set the Url
-            driver.FindElement(By.Name("Email")).SendKeys("a@d.com");
+            driver.Url = "http://www.uitestpractice.com/Students/Create"; //open the Url or set the Url
+            driver.FindElement(By.Name("FirstName")).SendKeys("prashant");
             Thread.Sleep(4000);// wait for 4000 mili sec to view the result  
             driver.Quit();  //close the borwser 
         }
@@ -160,8 +160,8 @@ namespace Selenium_Complite
         public void LocateByLinkTextName()
         {
             IWebDriver driver = new FirefoxDriver(); //run the borwser
-            driver.Url = "http://ankpro.com/"; //open the Url or set the Url
-            driver.FindElement(By.LinkText("Register")).Click();  //click on register lick to open this link text 
+            driver.Url = "http://www.uitestpractice.com/"; //open the Url or set the Url
+            driver.FindElement(By.LinkText("Home")).Click();  //click on register lick to open this link text 
 
             Thread.Sleep(4000);// wait for 4000 mili sec to view the result  
             driver.Quit();  //close the borwser 
@@ -172,10 +172,11 @@ namespace Selenium_Complite
         public void LocateByPartialLinkTextName()
         {
             IWebDriver driver = new FirefoxDriver(); //run the borwser
-            driver.Url = "http://ankpro.com/"; //open the Url or set the Url
-            driver.FindElement(By.PartialLinkText("Reg")).Click();  //by passing part of link it will open the link 
+            driver.Url = "http://www.uitestpractice.com/"; //open the Url or set the Url
+            driver.FindElement(By.PartialLinkText("Hom")).Click();  //by passing part of link it will open the link 
 
-            Thread.Sleep(4000);// wait for 4000 mili sec to view the result  
+            Thread.Sleep(4000);// wait for 4000 mil
+            i sec to view the result  
             driver.Quit();  //close the borwser 
         }
 
@@ -226,13 +227,15 @@ namespace Selenium_Complite
             Console.WriteLine(totalCount);
 
             driver.FindElement(By.CssSelector("a[href$='Training']")).Click();  // $ indicate that whouse element end with Training 
-
+            //  <footer>
+            //     <p>hi</p>
+            //  </footer>
             string textOutput = driver.FindElement(By.CssSelector("footer p")).Text;  // tag ke under ka tag selecter 
             Console.WriteLine(textOutput);
 
             //IWebDriver driver = new FirefoxDriver(); //run the borwser
             //driver.Url = "http://ankpro.com/"; //open the Url or set the Url
-            string textOutput1 = driver.FindElement(By.CssSelector("h1+p")).Text;  //h1 tag ke ke bad me p ko tag ko select krne ke liye 
+            string textOutput1 = driver.FindElement(By.CssSelector("h1+p")).Text;  //h1 tag ke ke bad me tag ko select krne ke liye 
             Console.WriteLine(textOutput1);
 
             string textOutput2 = driver.FindElement(By.CssSelector("form[role]")).Text;  //tag[attribute] 
